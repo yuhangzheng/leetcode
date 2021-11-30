@@ -1,40 +1,25 @@
 class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
+        n, m = len(haystack), len(needle)
+        if m == 0:
+            return 0
 
-        # Func: 计算偏移表
-        def calShiftMat(st):
-            dic = {}
-            for i in range(len(st) - 1, -1, -1):
-                if not dic.get(st[i]):
-                    dic[st[i]] = len(st) - i
-            dic["ot"] = len(st) + 1
-            return dic
+        def compute_prefix(needle):
+            pre, k = [-1] * m, -1
+            for i in range(1, m):
+                while k > -1 and needle[k + 1] != needle[i]:
+                    k = pre[k]
+                if needle[k + 1] == needle[i]:
+                    k += 1
+                pre[i] = k
+            return pre
 
-        # 其他情况判断
-        if len(needle) > len(haystack): return -1
-        if needle == "": return 0
-
-        # 偏移表预处理
-        dic = calShiftMat(needle)
-        idx = 0
-
-        while idx + len(needle) <= len(haystack):
-
-            # 待匹配字符串
-            str_cut = haystack[idx:idx + len(needle)]
-
-            # 判断是否匹配
-            if str_cut == needle:
-                return idx
-            else:
-                # 边界处理
-                if idx + len(needle) >= len(haystack):
-                    return -1
-                # 不匹配情况下，根据下一个字符的偏移，移动idx
-                cur_c = haystack[idx + len(needle)]
-                if dic.get(cur_c):
-                    idx += dic[cur_c]
-                else:
-                    idx += dic["ot"]
-
-        return -1 if idx + len(needle) >= len(haystack) else idx
+        pre, k = compute_prefix(needle), -1
+        for i in range(n):
+            while k > -1 and needle[k + 1] != haystack[i]:
+                k = pre[k]
+            if needle[k + 1] == haystack[i]:
+                k += 1
+            if k == m - 1:
+                return i - (m - 1)
+        return -1
