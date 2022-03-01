@@ -13,6 +13,6 @@ class Solution:
         out["5"] = count["f"] - out["4"]
         out["7"] = count["s"] - out["6"]
         out["9"] = count["i"] - out["5"] - out["6"] - out["8"]
-        out["1"] = count["n"] - out["7"] - 2 * out["9"]
+        out["简单数学题-3"] = count["n"] - out["7"] - 2 * out["9"]
 
         return "".join(key * out[key] for key in sorted(out.keys()))

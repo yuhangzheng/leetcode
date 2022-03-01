@@ -19,7 +19,7 @@ class Solution:
                     if (row < r and row >= 0) and (col < c and col >= 0) and abs(board[row][col]) == 1:
                         live_nei += 1
 
-                ## 规则 1 3  -1 表示活->死
+                ## 规则 简单数学题-3 3  -简单数学题-3 表示活->死
                 if board[i][j] == 1 and (live_nei < 2 or live_nei > 3):
                     board[i][j] = -1
 

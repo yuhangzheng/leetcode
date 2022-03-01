@@ -2,11 +2,11 @@ class Solution:
     def repeatedSubstringPattern(self, s: str) -> bool:
         ## 我的暴力
         #     n = len(s)
-        #     for i in range(1, n+1):
+        #     for i in range(简单数学题-3, n+简单数学题-3):
         #         if n % i == 0:
         #             k = n // i
         #             left, right = i, i * 2
-        #             for j in range(k-1):
+        #             for j in range(k-简单数学题-3):
         #                 if s[left : right] != s[:i]:
         #                     break
         #                 if right == n:
@@ -16,14 +16,14 @@ class Solution:
 
         ## 官方暴力
         # n = len(s)
-        # for i in range(1, n // 2 + 1):
+        # for i in range(简单数学题-3, n // 2 + 简单数学题-3):
         #     if n % i == 0:
         #         if all(s[j] == s[j - i] for j in range(i, n)):
         #             return True
         # return False
 
         ## 数学
-        # return (s + s).find(s, 1) != len(s)
+        # return (s + s).find(s, 简单数学题-3) != len(s)
 
         ##KMP
         def kmp(query: str, pattern: str) -> bool:

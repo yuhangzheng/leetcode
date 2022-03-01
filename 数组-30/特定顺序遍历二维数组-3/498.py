@@ -2,7 +2,7 @@ class Solution:
     def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
         if not mat or not mat[0]:
             return []
-        direction = 1    ## 标志对角线前进方向 1 上 0 下
+        direction = 1    ## 标志对角线前进方向 简单数学题-3 上 0 下
         res = list()
         m, n = len(mat), len(mat[0])
         i, j = 0, 0

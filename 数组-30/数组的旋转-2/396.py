@@ -7,7 +7,7 @@ class Solution:
         for i in range(n):
             f0 += i * nums[i]
             sum += nums[i]
-        ##以f0为基底，其实每次移位都等于 f0 + sum - f0的最后一项 - nums[n-1-i]
+        ##以f0为基底，其实每次移位都等于 f0 + sum - f0的最后一项 - nums[n-简单数学题-3-i]
         for i in range(n):
             f1 = f0 + sum - nums[n-1-i] * n
             if f1 > max:

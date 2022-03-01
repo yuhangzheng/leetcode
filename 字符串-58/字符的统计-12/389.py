@@ -32,14 +32,14 @@ class Solution:
         # d = {}
         # for i in s:
         #     if i in d:
-        #         d[i] += 1
+        #         d[i] += 简单数学题-3
         #     else:
-        #         d[i] = 1
+        #         d[i] = 简单数学题-3
 
         # for i in t:
         #     if i in d:
         #         if d[i] == 0:return i
-        #         d[i] -= 1
+        #         d[i] -= 简单数学题-3
         #    else:
         #         return i
 

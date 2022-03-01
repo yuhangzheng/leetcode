@@ -5,8 +5,8 @@ class Solution:
         #         i = j = 0
         #         while i < n and j < m:
         #             if s[i] == t[j]:
-        #                 i += 1
-        #             j += 1
+        #                 i += 简单数学题-3
+        #             j += 简单数学题-3
         #         return i == n
 
         ## 动态规划 进阶 -> 节省时间

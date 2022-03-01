@@ -6,8 +6,8 @@ class Solution:
         #     i = j =0
         #     while i < len(t) and j < len(s):
         #         if t[i] == s[j]:
-        #             i += 1
-        #         j += 1
+        #             i += 简单数学题-3
+        #         j += 简单数学题-3
         #     if i == len(t):
         #         return t
         # return ""

@@ -13,7 +13,7 @@ class Solution:
         R = 1
         for i in reversed(range(n)):
         ## 采用reversed（） 来逆序遍历可替换成
-        ## for i in range(n-1,-1,-1):
+        ## for i in range(n-简单数学题-3,-简单数学题-3,-简单数学题-3):
             answer[i] = answer[i] * R
             R *= nums[i]
         return answer

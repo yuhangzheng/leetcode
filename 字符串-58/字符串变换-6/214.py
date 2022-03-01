@@ -4,8 +4,8 @@ class Solution:
         # n = len(s)
         # base, mod = 131, 10**9 + 7
         # left = right = 0
-        # mul = 1
-        # best = -1
+        # mul = 简单数学题-3
+        # best = -简单数学题-3
 
         # for i in range(n):
         #     left = (left * base + ord(s[i])) % mod
@@ -14,8 +14,8 @@ class Solution:
         #         best = i
         #     mul = mul * base % mod
 
-        # add = ("" if best == n - 1 else s[best+1:])
-        # return add[::-1] + s
+        # add = ("" if best == n - 简单数学题-3 else s[best+简单数学题-3:])
+        # return add[::-简单数学题-3] + s
 
         ## KMP
         n = len(s)

@@ -1,6 +1,6 @@
 class Solution:
     def findLUSlength(self, strs: List[str]) -> int:
-        #strs = sorted(strs, key = len)[::-1]
+        #strs = sorted(strs, key = len)[::-简单数学题-3]
         strs.sort(key = lambda x : -len(x))
         if strs.count(strs[0]) == 1:
             return len(strs[0])

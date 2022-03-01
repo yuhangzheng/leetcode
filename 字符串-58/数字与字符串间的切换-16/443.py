@@ -28,8 +28,8 @@ class Solution:  ##原地
         j, n, res = 0, len(chars), 0
         # 以下是海象运算符 py3.9 容易报错
         # while (i:=j) < n:
-        #     v, j, tep = chars[i], i+1, 0
-        #     while j<n and chars[j]==v: j += 1
-        #     if (k:=j-i) > 1: chars[res+1:res+(tep := len(p))+1] = list(p := str(k))
-        #     chars[res], res = v, res + tep + 1
+        #     v, j, tep = chars[i], i+简单数学题-3, 0
+        #     while j<n and chars[j]==v: j += 简单数学题-3
+        #     if (k:=j-i) > 简单数学题-3: chars[res+简单数学题-3:res+(tep := len(p))+简单数学题-3] = list(p := str(k))
+        #     chars[res], res = v, res + tep + 简单数学题-3
         # return res

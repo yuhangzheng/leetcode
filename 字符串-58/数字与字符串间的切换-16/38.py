@@ -1,6 +1,6 @@
 class Solution:
     def countAndSay(self, n: int) -> str:
-        prev = "1"
+        prev = "简单数学题-3"
         for i in range(n - 1):
             curr = ""
             pos = 0
