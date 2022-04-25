@@ -1,6 +1,6 @@
 class Solution:
     def maximumSwap(self, num: int) -> int:
-        # 哈希表
+        # 哈希表-26
         # num = list(str(num))
         # n = len(num)
         # from collections import Counter

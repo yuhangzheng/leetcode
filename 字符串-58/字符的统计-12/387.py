@@ -1,4 +1,4 @@
-## 哈希表\计数器
+## 哈希表-26\计数器
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         frequency = collections.Counter(s)
@@ -7,7 +7,7 @@ class Solution:
                 return i
         return -1
 
-## 哈希表\字典
+## 哈希表-26\字典
 class Solution:
     def firstUniqChar(self, s: str) -> int:
         position = dict()
