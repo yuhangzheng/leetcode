@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="172.18.198.211 22" id="5c955dfe-22d4-46a9-a006-57cc7ab3f6ef" port="22" customName="172.18.198.211" nameFormat="CUSTOM" useOpenSSHConfig="true">
+        <option name="customName" value="172.18.198.211" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>
